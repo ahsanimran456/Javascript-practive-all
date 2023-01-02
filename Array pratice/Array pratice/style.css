@@ -1,0 +1,16 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
+.main-box{
+    border: 2px solid gray;
+}
+.main-header{
+    display: flex;
+    justify-content: center;
+}
+
+.main-body{
+    display: flex;
+    
+}
