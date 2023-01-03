@@ -11,14 +11,14 @@ const adduser = async () => {
    const userlist = data[count].name
    const userCurrent = {
       name: userlist,
-      money: Math.floor(Math.random() * 100000 )
+      money: Math.floor(Math.random() * 1000 )
    }
    // console.log(userCurrent)
    adddata_array(userCurrent)
    eachuserlist.innerHTML += `
         <div class="eachuser">
             <p class="names"><span>${userCurrent.name}</span> </p>
-            <p class="money"><span> ${userCurrent.money}$</span> </p>
+            <p class="money"><span> ${changecurrency(userCurrent.money)}$</span> </p>
 
         </div>
      `
@@ -29,6 +29,7 @@ const adddata_array = (listofpep) => {
    console.log(users)
 }
 const Deleteuser = () => {
+   count = 0
    users.pop()
    console.log(users)
    eachuserlist.innerHTML = " ";
@@ -37,12 +38,34 @@ const Deleteuser = () => {
             eachuserlist.innerHTML += 
                `<div class="eachuser">
                      <p class="names"><span>${element.name}</span> </p>
-                     <p class="money"><span>${element.money}</span> </p>
+                     <p class="money"><span>${changecurrency(element.money)}$</span> </p>
                 </div>`
          )
       });
 }
 
 
+const changecurrency = (number)=>{
+ return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
 
+
+ const showreshiest = ()=>{
+   count = 0
+    eachuserlist.innerHTML = " "
+      users = users.filter((items)=>{
+      if(items.money > 100){
+         return(
+            eachuserlist.innerHTML += 
+         `<div class="eachuser">
+               <p class="names"><span>${items.name}</span> </p>
+               <p class="money"><span>${changecurrency(items.money)}$</span> </p>
+          </div>`
+         )
+      } 
+      else{
+         eachuserlist.innerHTML = " "
+      }     
+   })
+ }
 

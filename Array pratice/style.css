@@ -10,6 +10,10 @@
 .main-header{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #b1a8a87d;
+    margin-bottom: 10px;
 }
 
 .main-body{
@@ -39,7 +43,7 @@
 .header-col8{
     display: flex;
     justify-content: space-around;
-    
+
 }
 .eachuser {
     display: flex;
