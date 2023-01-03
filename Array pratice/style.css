@@ -4,6 +4,8 @@
 }
 .main-box{
     border: 2px solid gray;
+    width: 100%;
+    background-color: #fafafa;
 }
 .main-header{
     display: flex;
@@ -12,5 +14,37 @@
 
 .main-body{
     display: flex;
+    width: 100%;
     
+}
+
+.row{
+    width: 100%;
+    margin: unset !important;
+    padding: unset !important ;
+
+}
+.col{
+    margin: unset !important;
+    padding: unset !important ;
+}
+.buttons-users{
+    width: 100%;
+    margin:10px 0 ;
+}
+.buttons-users button{
+    width: 100%;
+
+}
+.header-col8{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.eachuser {
+    display: flex;
+    justify-content: space-around;
+}
+.names span{
+    font-weight: 700;
 }

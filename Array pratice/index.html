@@ -20,20 +20,20 @@
                 </div>
                 <div class="main-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 ">
                             <div class="buttons-users">
-                                <button id="Adduser " onclick="adduser()">
+                                <button  class="btn btn-success" id="Adduser " onclick="adduser()">
                                     add user
                                 </button>
                             </div>
                             <div class="buttons-users">
-                                <button>
-                                    add user
+                                <button class="btn btn-danger" onclick="Deleteuser()">
+                                   Delete user
                                 </button>
                             </div>
                             <div class="buttons-users">
-                                <button>
-                                    add user
+                                <button class="btn btn-warning">
+                                   Sorting user with top Income
                                 </button>
                             </div>
                             <div class="buttons-users">
@@ -42,7 +42,19 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 ">
+                            <div class="header-col8">
+                                <div class="namelist">
+                                    <h5>
+                                        Name
+                                    </h5>
+                                </div>
+                                <div class="namelist">
+                                    <h5>
+                                        Income
+                                    </h5>
+                                </div>
+                            </div>
                             <div class="user-list" id="eachuserlist">
                                
                             </div>
