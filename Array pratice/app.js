@@ -69,3 +69,9 @@ const changecurrency = (number)=>{
    })
  }
 
+ const alluserincome = ()=>{
+   users = users.map((elments)=>elments.money*)
+ }
+
+
+
