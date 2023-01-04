@@ -70,7 +70,13 @@ const changecurrency = (number)=>{
  }
 
  const alluserincome = ()=>{
-   users = users.map((elments)=>elments.money*)
+   const pepincome = document.getElementById('pepincome')
+   const cal = users.reduce((acc,items)=>(acc+=items.money),0)
+   console.log(cal)
+   pepincome.innerHTML = 
+   `<div class="eachuser">
+               <p class="names"><span>All users Income: ${changecurrency(cal)}$</span> </p>
+          </div>`
  }
 
 
